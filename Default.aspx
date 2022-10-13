@@ -14,5 +14,6 @@
 
     <asp:Button Text="Klikni za rispekt" runat="server" />
     
+    <asp:Label Text="PrintF(Hello world!)" runat="server" />
 
 </asp:Content>
