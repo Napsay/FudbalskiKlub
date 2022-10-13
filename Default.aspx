@@ -10,7 +10,7 @@
     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 
 
-    <asp:Label Text="Puluj ovo" runat="server" />
+    <asp:Label Text="Miki duvaj ga" runat="server" />
 
 
     
