@@ -5,16 +5,7 @@
     <br />
     <br />
 
-    <asp:Label ID="Label1" runat="server" Text="mikiberic"></asp:Label>
+    <asp:Label ID="Label1" runat="server" Text="RISPEKT" Font-Size="Large"></asp:Label>
     <br />
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
 
-
-    <asp:Label Text="Miki nije cetnik" runat="server" />
-
-    <asp:Button Text="Klikni za rispekt" runat="server" />
-    
-    <asp:Label Text="PrintF(Hello world!)" runat="server" />
-
-    <asp:Label Text="Kapara rispekt za stefana i lazar je grobar" runat="server" />
 </asp:Content>
