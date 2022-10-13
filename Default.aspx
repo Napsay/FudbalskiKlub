@@ -12,6 +12,7 @@
 
     <asp:Label Text="izmena" runat="server" />
 
+    <asp:Button Text="Klikni za rispekt" runat="server" />
     
 
 </asp:Content>
