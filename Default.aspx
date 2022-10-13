@@ -2,10 +2,17 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
+    <asp:Label Text="Fudbalski Klub" runat="server" Font-Size="Larger" />
+    <br />
+    <asp:Label Text="Klub:" runat="server" />
+   
+
+    <asp:DropDownList ID="ddlKlub" runat="server" Height="26px" Width="137px">
+    </asp:DropDownList>
     <br />
     <br />
 
-    <asp:Label ID="Label1" runat="server" Text="RISPEKT" Font-Size="Large"></asp:Label>
-    <br />
+   
+    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
 
 </asp:Content>
