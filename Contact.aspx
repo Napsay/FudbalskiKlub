@@ -32,7 +32,7 @@
     <p>
         &nbsp;</p>
     <p>
-        <asp:Button ID="Button1" runat="server" Text="Dodaj" />
+        <asp:Button ID="Button1" runat="server" Text="Dodaj" OnClick="Button1_Click" />
 &nbsp;&nbsp;
         <asp:Button ID="Button2" runat="server" Text="Otkazi" />
     </p>
