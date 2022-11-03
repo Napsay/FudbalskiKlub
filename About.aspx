@@ -9,11 +9,13 @@
         <asp:Label ID="Label2" runat="server" Text="Grad: "></asp:Label>
         <asp:DropDownList ID="DropDownList1" runat="server">
         </asp:DropDownList>
-    </p>
+    &nbsp;</p>
     <p>
         &nbsp;</p>
     <p>
         <asp:GridView ID="GridView1" runat="server">
         </asp:GridView>
     </p>
+    <p>
+        &nbsp;</p>
 </asp:Content>
