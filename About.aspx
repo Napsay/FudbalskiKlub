@@ -7,7 +7,7 @@
     </p>
     <p>
         <asp:Label ID="Label2" runat="server" Text="Grad: "></asp:Label>
-        <asp:DropDownList ID="DropDownList1" runat="server">
+        <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
         </asp:DropDownList>
     &nbsp;</p>
     <p>
