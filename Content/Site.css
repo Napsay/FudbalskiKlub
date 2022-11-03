@@ -29,3 +29,22 @@ textarea {
         padding: 0;
     }
 }
+
+body{
+    background-image:url("/Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+
+    font-size:20px ;
+}
+
+#box{
+    background-color:red;
+    padding:40px;
+    margin:100px;
+    border-radius:90px;
+    width:450px;
+    padding: 40px; 
+    
+}

@@ -2,6 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     
+    <div id="box">
     <p>
     <asp:Label Text="Fudbalski Klub" runat="server" Font-Size="Larger" ID="Label1" />
         <br />
@@ -35,5 +36,6 @@
 &nbsp;&nbsp;
         <asp:Button ID="Button2" runat="server" Text="Otkazi" />
     </p>
+        </div>
     
 </asp:Content>
