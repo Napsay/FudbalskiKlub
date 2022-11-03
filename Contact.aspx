@@ -1,5 +1,19 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="test.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    
+    <p>
+    <asp:Label Text="Fudbalski Klub" runat="server" Font-Size="Larger" ID="Label1" />
+        <br />
+    </p>
+    <p>
+        <asp:Label ID="Label2" runat="server" Text="Grad: "></asp:Label>
+        <asp:DropDownList ID="DropDownList1" runat="server">
+        </asp:DropDownList>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <asp:GridView ID="GridView1" runat="server">
+        </asp:GridView>
+    </p>
 </asp:Content>
