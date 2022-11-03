@@ -40,7 +40,7 @@ namespace test
                 }
             }
         }
-
+        /*
         private void GridBind()
         {
             
@@ -63,8 +63,34 @@ namespace test
                     }
                 }
             }
+        }*/
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
-        
+        protected void ddlKlub_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (SqlConnection conn = new SqlConnection(Connection.conString))
+            {
+                conn.Open();
+                string cmdSelect = "Select Ime,Prezime,Godine,Pozicija from Igrac where KlubID = @id";
+                using (SqlCommand cmd = new SqlCommand(cmdSelect,conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", ddlKlub.SelectedItem.Value);
+                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    {
+                        sda.SelectCommand = cmd;
+                        using (DataTable dt = new DataTable())
+                        {
+                            sda.Fill(dt);
+                            GridView1.DataSource = dt;
+                            GridView1.DataBind();
+                        }
+
+                    }
+                }
+            }
+        }
     }
 }
