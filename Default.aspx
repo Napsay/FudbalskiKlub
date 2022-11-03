@@ -13,6 +13,6 @@
     <br />
 
     <br />
-    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
+    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged"></asp:GridView>
 
 </asp:Content>
