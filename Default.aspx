@@ -7,12 +7,14 @@
     <asp:Label Text="Klub:" runat="server" />
    
 
-    <asp:DropDownList ID="ddlKlub" runat="server" Height="26px" Width="137px">
+    <asp:DropDownList ID="ddlKlub" runat="server" Height="26px" Width="137px" AutoPostBack="True" OnSelectedIndexChanged="ddlKlub_SelectedIndexChanged">
     </asp:DropDownList>
     <br />
     <br />
 
-    <br />
-    <asp:GridView ID="GridView1" runat="server" OnSelectedIndexChanged="GridView1_SelectedIndexChanged"></asp:GridView>
+    <asp:GridView ID="GridView1" runat="server">
+    </asp:GridView>
 
+    <br />
+    
 </asp:Content>

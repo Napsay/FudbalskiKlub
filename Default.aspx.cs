@@ -15,6 +15,7 @@ namespace test
             if(!this.IsPostBack)
             {
                 this.FillDropDownList();
+                
             }
         }
 
@@ -41,28 +42,41 @@ namespace test
             }
         }
 
-        private void GridBind()
+        
+        protected void ddlKlub_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            using (SqlConnection con = new SqlConnection(Connection.conString))
+            using (SqlConnection conn = new SqlConnection(Connection.conString))
             {
-                con.Open();
-                string SelectCMD = "SELECT ";
-                using (SqlCommand cmd = new SqlCommand(SelectCMD,con))
+                try
                 {
-                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    conn.Open();
+                    string SelectCMD = "SELECT Ime,Prezime,Godine,Pozicija from Igrac where KlubID = @id";
+                    using (SqlCommand cmd = new SqlCommand(SelectCMD,conn))
                     {
-                        sda.SelectCommand = cmd;
-                        using (DataTable dt = new DataTable())
+                        cmd.Parameters.AddWithValue("@id", ddlKlub.SelectedItem.Value);
+                        using (SqlDataAdapter sda = new SqlDataAdapter())
                         {
-                            sda.Fill(dt);
-                            GridView1.DataSource = dt;
-                            GridView1.DataBind();
-                        }
+                            sda.SelectCommand = cmd;
+                            using (DataTable dt = new DataTable())
+                            {
+                                sda.Fill(dt);
+                                GridView1.DataSource = dt;
+                                GridView1.DataBind();
+                            }
 
+                        }
                     }
                 }
+                catch(Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
+        }
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
         }
 
         
