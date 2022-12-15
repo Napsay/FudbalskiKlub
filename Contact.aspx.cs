@@ -81,5 +81,14 @@ namespace test
                 }
             }
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            DropDownList1.SelectedIndex = 0;
+            DropDownList2.SelectedIndex = 0;
+        }
     }
 }
